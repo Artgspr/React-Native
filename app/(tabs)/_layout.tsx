@@ -43,6 +43,15 @@ export default function TabLayout() {
           ),
         }}
       />
+       <Tabs.Screen
+        name="odds"
+        options={{
+          title: 'Odds',
+          tabBarIcon: ({color, focused}) => (
+            <Ionicons name={focused ? 'logo-dribbble' : 'logo-dribbble'} color={color} size={24} />
+          ),
+        }}
+      />
 
     </Tabs>
   );
