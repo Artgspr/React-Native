@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "first-app",
-    "slug": "first-app",
+    "name": "Peixoto Esportes",
+    "slug": "Peixoto Esportes",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/peixoto2.jpg",
-    "scheme": "myapp",
+    "icon": "./assets/images/peixotoEsportesLogo.png",
+    "scheme": "Peixoto Esportes",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,21 +13,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/peixoto2.jpg",
+        "foregroundImage": "./assets/images/peixotoEsportesLogo.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/peixoto2.jpg"
+      "favicon": "./assets/images/peixotoEsportesLogo.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/peixoto2.jpg",
+          "image": "./assets/images/peixotoEsportesLogo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -36,6 +36,20 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "79754e6c-c47c-40b9-8eab-3efd0822c73a"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/79754e6c-c47c-40b9-8eab-3efd0822c73a"
     }
   }
 }

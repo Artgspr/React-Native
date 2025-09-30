@@ -9,7 +9,7 @@ import EmojiPicker from '@/app/components/EmojiPicker';
 import EmojiList from '@/app/components/EmojiList';
 import EmojiSticker from '@/app/components/EmojiSticker';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-const PlaceholderImage = require('@/assets/images/peixoto2.jpg')
+const PlaceholderImage = require('@/assets/images/peixotoEsportesLogo.png')
 import * as MediaLibrary from 'expo-media-library';
 import { captureRef } from 'react-native-view-shot';
 import domtoimage from 'dom-to-image';
@@ -108,8 +108,8 @@ export default function Index() {
         </View>
       ) : (
       <View style={styles.footerContainer}>
-        <h1 style={styles.h1}>JOGO DO PEIXOTO</h1>
-        <h2 style={styles.h2}>PAGANDO MUITO!</h2>
+        <Text style={styles.title}>PEIXOTO ESPORTES</Text>
+        <Text style={styles.subtitle}>O seu aplicativo de Esportes</Text>
         <Button theme="primary" label="Choose a photo" onPress={pickImageAsync}/>
         <Button label="Use this photo" onPress={() => setShowAppOptions(true)}/>
       </View>
@@ -128,14 +128,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#205781",
   },
-  h1: {
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
     color: "#98D2C0",
-    fontFamily: "Arial",
+    marginBottom: 8,
+    textAlign: 'center',
   },
 
-  h2: {
+  subtitle: {
+    fontSize: 18,
     color: "#F6F8D5",
-    fontFamily: "Arial",
+    textAlign: 'center',
+    marginBottom: 20,
   },
 
   button: {
@@ -157,8 +162,7 @@ const styles = StyleSheet.create({
 
   footerContainer: {
     flex: 1 / 3,
-    alignItems: 'center',
-    marginBottom: 200,
+    alignItems: 'center',    
     },
   
     optionsContainer: {
